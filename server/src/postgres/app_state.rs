@@ -10,6 +10,7 @@ pub(crate) struct AppState {
 }
 
 impl AppState {
+
     pub fn new(pool: PgPool) -> Self {
         Self {
             store: Store::new(pool),
